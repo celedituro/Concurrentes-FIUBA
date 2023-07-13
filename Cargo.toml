@@ -1,0 +1,48 @@
+[package]
+name = "exercises"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8.5"
+actix = "0.13.0"
+actix-rt = "2.0" # <-- Runtime for actix
+std-semaphore = "0.1"
+
+[[bin]]
+name = "combustible"
+path = "src/combustible-actores.rs"
+
+[[bin]]
+name = "canales"
+path = "src/producer-consumer/canales.rs"
+
+[[bin]]
+name = "actores"
+path = "src/producer-consumer/actores.rs"
+
+[[bin]]
+name = "sem-buffer-finito"
+path = "src/producer-consumer/sem-buffer-finito.rs"
+
+[[bin]]
+name = "sem-buffer-infinito"
+path = "src/producer-consumer/sem-buffer-infinito.rs"
+
+[[bin]]
+name = "condvars"
+path = "src/producer-consumer/condvars.rs"
+
+[[bin]]
+name = "barreras"
+path = "src/barreras.rs"
+
+[[bin]]
+name = "lines-counter"
+path = "src/lines-counter.rs"
+
+[[bin]]
+name = "words-counter"
+path = "src/words-counter.rs"
